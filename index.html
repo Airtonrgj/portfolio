@@ -4,123 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - José Airton</title>
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            
-            
-        }
-        
-        body{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #8a8a8a;
-            color: #333;
-            line-height: 1,6;
-            padding: 2rem;
-            background: linear-gradient(135deg, #368fe7 50%, #3aafdd 50%);
-        }
-
-          header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #222;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      color: #4e4c4e;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      max-width: 600px;
-      margin: 1rem auto;
-      font-size: 1rem;
-    }
-
-    .social-links {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    .social-links a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #061e38;
-      font-weight: bolder;
-    }
-
-    .projects {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .project {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    .project h3 {
-      margin-bottom: 0.5rem;
-      color: #333;
-    }
-
-    .project p {
-      margin-bottom: 0.3rem;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #868181;
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .project {
-        padding: 1rem;
-      }
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="hero">
+      <div class="hero-photo">
+        <img src="imagens/214992477.png" alt="Foto de José Airton" />
+      </div>
+
+      <div class="hero-content">
         <h1>José Airton Rodrigues Galdino Júnior</h1>
-        <h2>Estudante de Engenharia de Software- ICEV</h2>
-        <p>Sou estudante e um grande entusiasta do desenvolvimento de software, buscando aprender novas tecnologias e solucionar problemas.</p>
+        <p class="hero-role">Estudante de Engenharia de Software · ICEV · 3º Período</p>
+        <p class="hero-bio">Sou estudante e um grande entusiasta do desenvolvimento de software, buscando aprender novas tecnologias e solucionar problemas.</p>
+
         <div class="social-links">
-     
-      <a href="https://www.linkedin.com/in/jose-airton-rodrigues-577529368/" target="_blank">linkedin</a> | <a href="https://github.com/Airtonrgj" target="_blank">Github</a> 
-    </div>
+          <a href="https://www.linkedin.com/in/jose-airton-rodrigues-577529368/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/Airtonrgj" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.74-1.56-2.55-.29-5.24-1.27-5.24-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.17a11.05 11.05 0 0 1 5.79 0c2.21-1.48 3.18-1.17 3.18-1.17.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.37-5.25 5.66.42.36.79 1.07.79 2.17v3.21c0 .31.21.67.8.56C20.21 21.39 23.5 17.08 23.5 12 23.5 5.65 18.35.5 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="mailto:jarodriguesj1@gmail.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 13.065 0 6V4c0-1.1.9-2 2-2h20c1.1 0 2 .9 2 2v2l-12 7.065zm12-4.71V20c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V8.355l12 6.94 12-6.94z"/></svg>
+            <span>E-mail</span>
+          </a>
+          <a href="https://www.instagram.com/airtonrgj/?next=%2Flittledoce%2F" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
     </header>
 
-     <section class="projects">
-    <h2>Projetos</h2>
+    <!-- achei melhor uma section para cada um dos parâmetro que acho importante apresentar -->
+    <section class="linguagens">
+      <h2>Linguagens</h2>
 
-    <div class="project">
-      <h3>Calculadora</h3>
-      <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript</p>
-      <p>Uma calculadora simples com as quatro operações básicas, com interface moderna e responsiva.</p>
-      <a href="https://airtonrgj.github.io/calculadora/" target="_blank">Ver projeto</a>
-    </div>
+      <div class="carrossel">
+        <div class="carrossel-track">
+          <div class="linguagen">
+            <h3>Python</h3>
+            <p><strong>Tempo:</strong> 1 ano e meio</p>
+            <p><strong>Nível:</strong> intermediário</p>
+          </div>
+
+          <div class="linguagen">
+            <h3>Java</h3>
+            <p><strong>Tempo:</strong> 1 ano e meio</p>
+            <p><strong>Nível:</strong> intermediário</p>
+          </div>
+
+          <div class="linguagen">
+            <h3>JavaScript</h3>
+            <p><strong>Tempo:</strong> 1 ano</p>
+            <p><strong>Nível:</strong> intermediário</p>
+          </div>
+
+          <div class="linguagen">
+            <h3>C</h3>
+            <p><strong>Tempo:</strong> 1 ano e meio</p>
+            <p><strong>Nível:</strong> básico</p>
+          </div>
+
+          <div class="linguagen">
+            <h3>HTML & CSS</h3>
+            <p><strong>Tempo:</strong> 1 ano</p>
+            <p><strong>Nível:</strong> intermediário</p>
+          </div>
+
+          <div class="linguagen" aria-hidden="true">
+            <h3>Python</h3>
+            <p><strong>Tempo:</strong> 1 ano e meio</p>
+            <p><strong>Nível:</strong> intermediário</p>
+          </div>
+
+          <div class="linguagen" aria-hidden="true">
+            <h3>Java</h3>
+            <p><strong>Tempo:</strong> 1 ano e meio</p>
+            <p><strong>Nível:</strong> intermediário</p>
+          </div>
+
+          <div class="linguagen" aria-hidden="true">
+            <h3>JavaScript</h3>
+            <p><strong>Tempo:</strong> 1 ano</p>
+            <p><strong>Nível:</strong> intermediário</p>
+          </div>
+
+          <div class="linguagen" aria-hidden="true">
+            <h3>C</h3>
+            <p><strong>Tempo:</strong> 1 ano e meio</p>
+            <p><strong>Nível:</strong> básico</p>
+          </div>
+
+          <div class="linguagen" aria-hidden="true">
+            <h3>HTML & CSS</h3>
+            <p><strong>Tempo:</strong> 1 ano</p>
+            <p><strong>Nível:</strong> intermediário</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
 
     
+    
+    
+    
+    
+    
+    <section class="projects">
+      <h2>Projetos</h2>
+
+      <div class="projects-list">
+<!-- mantive a mesma classe tendo em vista que eu queria uma apresentação homogênia dos projetos -->
+ <!-- adicionanndo a classe dentro do link, assim pode criar em qualquer parte do quadrado, que ele vai direto pro link -->
+        <a class="project" href="https://encantos-da-montanha.vercel.app/src/presentation/views/index.html" target="_blank" rel="noopener noreferrer">
+          <h3>Pousada Encantos da Montanha</h3>
+          <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript</p>
+          <p>Implementação prática dos ensinamentos da matéria de Progamação WEB no terceiro periodo, muito importante no processo de aprendizado tendo em vista a necessidade de implementação de APIs e desenvolvimento de lógica para suprir as necessidades dos requisitos entregues pelo professor</p>
+          
+        </a>
+
+        <a class="project" href="https://airtonrgj.github.io/calculadora/" target="_blank" rel="noopener noreferrer">
+          <h3>Implementação prática do algortmo de dijkstra em Python</h3>
+          <p><strong>Tecnologias:</strong> Python</p>
+          <p>Projeto prático e simplista, queria apenas um representação fácil de como provavélmente funciona a base de mecanismos de busca e identificação de localização</p>
+
+        </a>
+
+        <a class="project" href="https://github.com/Airtonrgj/POO-Escolar" target="_blank" rel="noopener noreferrer">
+          <h3>Sistema de Gerenciamento Escolar (POO)</h3>
+          <p><strong>Tecnologias:</strong> Java</p>
+          <p>Projeto em grupo desenvolvendo um sistema de gestão escolar com cadastro de estudantes e disciplinas, registro de notas, cálculo de médias e geração de ranking. Implementação focada em Programação Orientada a Objetos e uso de coleções (ArrayList, LinkedHashSet, Map).</p>
+        </a>
+      </div>
   </section>
+
+  <!-- achei meio desnecessário ja que ja tem o link para conversa no e-mail no inicio da página  -->
+  <!-- <section class="contato">
+    <h2>Contato</h2>
+    <p class="contato-text">Vamos conversar? Estou aberto a oportunidades, dúvidas e parcerias.</p>
+    <a class="contato-card" href="mailto:jarodriguesj1@gmail.com">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 13.065 0 6V4c0-1.1.9-2 2-2h20c1.1 0 2 .9 2 2v2l-12 7.065zm12-4.71V20c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V8.355l12 6.94 12-6.94z"/></svg>
+      <div>
+        <span class="contato-label">E-mail</span>
+        <span class="contato-value">jarodriguesj1@gmail.com</span>
+      </div>
+    </a>
+  </section> -->
 
   <footer>
     &copy; 2025 José Airton. Todos os direitos reservados.
